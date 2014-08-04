@@ -1,0 +1,86 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0"
+    android:orientation="vertical"
+    android:padding="15dp"
+    tools:context="com.glieunou.article.MainActivity" >
+
+    
+    <!-- textview devant contenir le libélé titre de l'article
+    
+    au niveau de android:text; on précise que le titre est référencé depuis le fichier string.xml 
+    
+    se trouvant dans le dossier values
+    
+      -->
+    
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/title" />
+
+     <!-- zone de texte pour écrire le titre -->
+    
+    <EditText
+        android:id="@+id/editText1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="20dp"
+        android:ems="10" >
+
+        <requestFocus />
+    </EditText>
+
+    
+    <!-- textview devant contenir le libélé contenu de l'article -->
+    
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:textSize="15sp"
+        android:layout_height="wrap_content"
+        android:paddingBottom="10dp"
+        android:text="@string/contenu" />
+
+    
+     <!-- zone de texte pour écrire le contenu -->
+    
+    <EditText
+        android:id="@+id/editText2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.65"
+        android:paddingBottom="20dp"
+        android:ems="10"
+        android:inputType="textPostalAddress" />
+    
+     <!-- Bouton pour enregistrer -->
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/save" />
+
+    <!-- Bouton pour modifier -->
+    
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/update" />
+    
+    <!-- Bouton pour supprimer -->
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/del" />
+
+</LinearLayout>

@@ -1,0 +1,33 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="1.0"
+    android:orientation="vertical"
+    tools:context="com.glieunou.article.MainActivity" >
+
+    
+    <!-- Bouton pour envoyer a la page crud.xml pour enregistrer -->
+    
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.1"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:text="@string/ajout"
+         />
+    
+    <!-- listview contenant l'ensemble des articles enregistré,
+    
+     un clic sur un article dans la liste permet de le modifier ou supprimer -->
+
+    <ListView
+        android:id="@+id/listView1"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.9" >
+    </ListView>
+
+</LinearLayout>

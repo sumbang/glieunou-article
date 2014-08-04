@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Article</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="ajout">Ajouter un article</string>
+    <string name="title">Titre de l\'article</string>
+    <string name="contenu">Contenu de l\'article</string>
+    <string name="save">Enregistrer l\'article</string>
+    <string name="update">Modifier l\'article</string>
+    <string name="del">Supprimer l\'article</string>
+
+</resources>
